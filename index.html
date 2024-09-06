@@ -10,13 +10,73 @@
 
   <style>
 
+    .header{
+      background: linear-gradient(to bottom, #ee7104, #ee8931);
+    }
+
     .homeimg {
       display: inline-block;
       text-decoration: none;
       height: 20px;
       line-height: 20px;
       border-radius: 10px;
-      background-color: #007bff;
+      background-color: #ee7104;
+      color: white;
+      padding: 0 10px;
+      text-align: center;
+      border: none;
+      font-size: 16px;
+    }
+
+    .newsimg{
+      display: inline-block;
+      text-decoration: none;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 10px;
+      background-color: #ee7104;
+      color: white;
+      padding: 0 10px;
+      text-align: center;
+      border: none;
+      font-size: 16px;
+    }
+
+    .missionsimg{
+      display: inline-block;
+      text-decoration: none;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 10px;
+      background-color: #ee7104;
+      color: white;
+      padding: 0 10px;
+      text-align: center;
+      border: none;
+      font-size: 16px;
+    }
+
+    .shopimg{
+      display: inline-block;
+      text-decoration: none;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 10px;
+      background-color: #ee7104;
+      color: white;
+      padding: 0 10px;
+      text-align: center;
+      border: none;
+      font-size: 16px;
+    }
+
+    .pfpimg{
+      display: inline-block;
+      text-decoration: none;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 10px;
+      background-color: #ee7104;
       color: white;
       padding: 0 10px;
       text-align: center;
@@ -30,7 +90,7 @@
       height: 40px;
       line-height: 40px;
       border-radius: 20px;
-      background-color: #007bff;
+      background-color: #ee7104;
       color: white;
       padding: 0 10px;
       text-align: center;
@@ -44,12 +104,16 @@
     }
 
     body{
-      background: linear-gradient(to bottom, #ff5406, #971A17)
+      background-color: rgb(195, 195, 195);
     }
     .Mainlogotopofpage {
       width: 80px;
       height: 80px;
       border-radius: 40px;
+    }
+
+    .feed{
+      align-self: center;
     }
 
     .profilepicture {
@@ -74,7 +138,7 @@
 
 <body>
 
-
+  <div class="header">
     <img class="Mainlogotopofpage" src="images/applogo.jpg" alt="logo Alterego">
 
       <br>
@@ -84,36 +148,21 @@
       
 
 
-       <a class="navbutton" href="news.html">
-         <button class="news">
-           NEWS
-         </button>
-       </a>
+       <a class="navbutton" href="news.html"><img class="newsimg" src="images/news.png" alt=""></a>
       
 
 
-       <a class="navbutton" href="missions.html"> 
-         <button class="missions">
-           MISSIONS
-         </button>
-       </a>
+       <a class="navbutton" href="missions.html"><img class="missionsimg" src="images/mission.png" alt=""></a>
       
       
 
-       <a class="navbutton" href="shop.html">
-         <button class="shop">
-           SHOP
-         </button>
-       </a>
+       <a class="navbutton" href="shop.html"><img class="shopimg" src="images/shop.png" alt=""></a>
       
       
 
-       <a href="profile.html">
-         <button class="profile">
-           PROFILE
-         </button>
-       </a>
-  
+       <a class="navbutton" href="profile.html"><img class="pfpimg" src="images/pfp.png" alt=""></a>
+    
+  </div>
  
 
 
@@ -121,20 +170,22 @@
   <br>
   <br>
 
-  <img class="profilepicture" src="images/profilepicture.jpg" alt="profile picture">
+  <div class="feed">  
+      <img class="profilepicture" src="images/profilepicture.jpg" alt="profile picture">
 
-  <a class="username" href="profile.html">@DaSpark</a>
+      <a class="username" href="profile.html">@DaSpark</a>
 
-  <p class="posttext">This dude looks so odd lol</p>
+      <p class="posttext">This dude looks so odd lol</p>
 
-  <img class="postimage" src="images/post.jpg" alt="post image">
+      <img class="postimage" src="images/post.jpg" alt="post image">
+   
 
-  <br>  
+    <br>  
 
-  <button>like</button>
-  <button>coment</button>
-  <button>share</button>
-
+      <button>like</button>
+      <button>coment</button>
+      <button>share</button>
+  </div>  
 </body>
 
 </html>
