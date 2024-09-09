@@ -12,8 +12,27 @@
 
     .header{
       background: linear-gradient(to bottom, #ee7104, #ee8931);
+      padding: 8px;
     }
+    
+    .navbutton{
+      display: inline-block;
+      text-decoration: none;
+      height: 40px;
+      width: 180px;
+      line-height: 40px;
+      border-radius: 20px;
+      background-color: #ee7104;
+      color: white;
+      padding: 0 10px;
+      text-align: center;
+      border: none;
+      font-size: 16px;
+      margin-left: 80px;
+      margin-right: 80px;
 
+    }
+    
     .homeimg {
       display: inline-block;
       text-decoration: none;
@@ -84,19 +103,8 @@
       font-size: 16px;
     }
 
-    .navbutton{
-      display: inline-block;
-      text-decoration: none;
-      height: 40px;
-      line-height: 40px;
-      border-radius: 20px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-    }
+
+
 
     .header{
       background-color: gray;
@@ -111,9 +119,12 @@
       height: 80px;
       border-radius: 40px;
     }
-
     .feed{
-      align-self: center;
+      background-color: rgb(206, 212, 217);
+      padding: 20px;
+      border-radius: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
     }
 
     .profilepicture {
@@ -133,6 +144,54 @@
     .postimage {
       width: 1000px;
     }
+    .post_in_feed{
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+
+
+    .footer{
+      background-color: #ff5406;
+      padding: 15px;
+      border-radius: 10px;
+      height: 310px;
+    }
+    
+    .about_us{
+      background-color: rgb(217, 217, 217);
+      width: 200px;
+      height: 300px;
+      float: left;
+      padding: 5px;
+      margin-left: 600px;
+      border-radius: 10px;
+    }
+
+    .learn_more{
+      background-color: rgb(217, 217, 217);
+      width: 200px;
+      height: 300px;
+      float: right;
+      padding: 5px;
+      margin-right: 600px;
+      border-radius: 10px;
+    }
+
+    .footer_end_text{
+      font-size: 13px;
+      font-style: italic;
+      color: gray;
+      float: left;
+    }
+
+    #comment_section{
+      padding: 10px;
+      border-radius: 8px;
+      width: 1000px;
+    }
+
+
   </style>
 </head>
 
@@ -143,13 +202,16 @@
     <img class="Mainlogotopofpage" src="images/applogo.jpg" alt="logo Alterego">
 
     <br>
+    <br>
 
-    <input type="search" name="searchbar" placeholder="Searching for Gamers?" id="searchbar">
+    <div>
+      <input type="search" name="searchbar" placeholder="Searching for Gamers?" id="searchbar">
+    </div>
 
     <br>
     <br>
     
-     
+    <div class="navigation_buttons"> 
       <a class="navbutton" href="index.html"><img class="homeimg" src="images/1946488.png" alt=""></a>
       
 
@@ -167,7 +229,7 @@
       
 
        <a class="navbutton" href="profile.html"><img class="pfpimg" src="images/pfp.png" alt=""></a>
-    
+    </div>
   </div>
  
 
@@ -175,26 +237,106 @@
 
   <br>
   <br>
+  <br>
+  <br>
 
   <!--Feed section with posts from users and relatie interactive buttons-->
-  <div class="feed">  
-      <img class="profilepicture" src="images/profilepicture.jpg" alt="profile picture">
+  <div class="feed"> 
 
-      <a class="username" href="profile.html">@DaSpark</a>
+    <div class="post_in_feed"> 
+          <img class="profilepicture" src="images/profilepicture.jpg" alt="profile picture">
 
-      <p class="posttext">This dude looks so odd lol</p>
+          <a class="username" href="profile.html">@DaSpark</a>
 
-      <img class="postimage" src="images/post.jpg" alt="post image">
+          <p class="posttext">This dude looks so odd lol</p>
+
+          <img class="postimage" src="images/post.jpg" alt="post image">
    
+    </div>      
 
-    <br>  
+        <br>  
 
-      <button>like</button>
-      <button>share</button>
+        <button>like</button>
+        <button>share</button>
 
-      <br>
-      <input type="text" placeholder="Leave your thoughts!" id="comment_section">
-  </div>  
+        <br>
+        <br>
+          <input type="text" placeholder="Leave your thoughts!" id="comment_section">
+ 
+  
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    <div class="post_in_feed"> 
+          <img class="profilepicture" src="images/eren jeagageru.jpg" alt="profile picture">
+
+          <a class="username" href="">@DaSpark</a>
+
+          <p class="posttext">Probably still one of the most traumatising places on earth...</p>
+
+          <img class="postimage" src="images/SRFull.jpg" alt="post image">
+   
+    </div>      
+
+        <br>  
+
+        <button>like</button>
+          <button>share</button>
+
+        <br>
+        <br>
+          <input type="text" placeholder="Leave your thoughts!" id="comment_section">
+  </div>
+
 </body>
+
+<br>
+
+<footer>
+
+  <div class="footer">
+
+    <div class="about_us">
+
+      <h3>
+        About Us
+      </h3>
+
+      <p>
+        Altereg is, as of now, run by a single person. Me, Michele Bevilacqua. At the moment i dont have any businness contacts, but in the future you will find me via
+      </p>
+
+      <ul>
+        <li>email</li>
+        <li>businness address</li>
+        <li>businness telephone</li>
+      </ul>
+
+    </div>
+
+    <div class="learn_more">
+
+      <h3>
+        Learn More!
+      </h3>
+
+      <p>
+        Click this link if you wish to know more about Alterego!
+      </p>
+
+      <a href="about_alterego.html">www.aboutalterego.com</a>
+    </div>
+
+
+  </div>
+
+  <p class="footer_end_text">
+    Alterego, the website for gamers
+  </p>
+
+</footer>
 
 </html>
