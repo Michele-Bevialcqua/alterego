@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-            <title>
-                Atlerego - Your Profile
-            </title>
-            <meta charset="UTF-8">
-            <meta name="description" content="Your Alterego profile">
-    
-            <style>
-                .yourprofilepicture{
-                    width: 120px;
-                    height: 120px;
-                    border-radius: 60px;
-                    float: left;
-                    margin-right: 40px;
-                }
-                .AlteregoLogo{
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 20px;
-                    float: right;
-                }
-                .navigationbutton{
-                    float: left;
+    <title>Profile - Alterego</title>
+    <meta name="description" content="Your Alterego profile">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/profile.css">
 
-                }
-            </style>
     
         </head>
 
 
 
     <body>
+  <!--header section. this always stays at the top of the page-->
+  <div class="header">
+    <div class="search_header">
+      <img class="Mainlogotopofpage" src="images/applogo.jpg" alt="logo Alterego">
 
-        <a class="navigationbutton" href="index.html">
-            <button class="home">
-              HOME
-            </button>
-          </a>
-        
-          <a class="navigationbutton" href="news.html">
-            <button class="news">
-              NEWS
-            </button>
-          </a>
-        
-          <a class="navigationbutton" href="missions.html"> 
-            <button class="missions">
-              MISSIONS
-            </button>
-          </a>
-                  
-          <a href="shop.html">
-            <button class="shop">
-              SHOP
-            </button>
-          </a>
 
-          <a class="navigationbutton" href="profile.html">
-            <button class="profile">
-              PROFILE
-            </button>
-          </a>
 
-          <br>
-          <br>
+      <div>
+        <input class="homepage_searchbar" type="search" name="searchbar" placeholder="Searching for Gamers?" id="searchbar">
+      </div>
+    </div>    
+
+    
+    <div class="navigation_buttons"> 
+      <a class="navbutton" href="index.html"><img class="homeimg" src="images/1946488.png" alt=""></a>
+      
+
+
+       <a class="navbutton" href="news.html"><img class="newsimg" src="images/news.png" alt=""></a>
+      
+
+
+       <a class="navbutton" href="missions.html"><img class="missionsimg" src="images/mission.png" alt=""></a>
+      
+      
+
+       <a class="navbutton" href="shop.html"><img class="shopimg" src="images/shop.png" alt=""></a>
+      
+      
+
+       <a class="navbutton " href="profile.html"><img class="this_page_pfpimg" src="images/pfp.png" alt=""></a>
+    </div>
+  </div>
+
+    <br>
+    <br>
         
-        <a href="index.html"><img class="AlteregoLogo" src="images/applogo.jpg" alt="Alterego logo"></a>
-        
+    <div class="account_details">
+      <div class="main_info">
         <a href="profile picture.jpg"><img class="yourprofilepicture" src="images/profilepicture.jpg" alt="profile picture"></a>
 
         <p class="username">
             DaSpark
         </p>
+      </div>
 
+      <div class="function_buttons">
+        <button class="editprofile" type="menu">Edit profile</button>
+        <button>Manage Preferences</button>
+        <button>Settings</button>
+      </div>
+
+      <div class="account_info">
+        <h4>Info</h4>
+        <p>
+          Hey! im Sparkz. I like single player games like GOT, Wukong, Cyberpunk (probably favourite) and GTAV
+        </p>
+      </div>
+
+      <div class="post_timeline">
+        <h4>
+          Posts
+        </h4>
+        <img class="acc_posted_images" src="images/post.jpg" alt="cyberpunk post">
+      </div>
+
+
+    </div>
     </body>
 
 </html>
-
-{}

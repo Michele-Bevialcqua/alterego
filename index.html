@@ -5,214 +5,34 @@
 <head>
   <title>Alterego</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sign up or Login to Alterego, the only social media platform for and by gamers. Connect with Gamers around the world with the same interests as you and stay up to date withthe latest news in the gaming industry">
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css"/>
 
-  <style>
-
-    .header{
-      background: linear-gradient(to bottom, #ee7104, #ee8931);
-      padding: 8px;
-    }
-    
-    .navbutton{
-      display: inline-block;
-      text-decoration: none;
-      height: 40px;
-      width: 180px;
-      line-height: 40px;
-      border-radius: 20px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-      margin-left: 80px;
-      margin-right: 80px;
-
-    }
-    
-    .homeimg {
-      display: inline-block;
-      text-decoration: none;
-      height: 20px;
-      line-height: 20px;
-      border-radius: 10px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-    }
-
-    .newsimg{
-      display: inline-block;
-      text-decoration: none;
-      height: 20px;
-      line-height: 20px;
-      border-radius: 10px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-    }
-
-    .missionsimg{
-      display: inline-block;
-      text-decoration: none;
-      height: 20px;
-      line-height: 20px;
-      border-radius: 10px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-    }
-
-    .shopimg{
-      display: inline-block;
-      text-decoration: none;
-      height: 20px;
-      line-height: 20px;
-      border-radius: 10px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-    }
-
-    .pfpimg{
-      display: inline-block;
-      text-decoration: none;
-      height: 20px;
-      line-height: 20px;
-      border-radius: 10px;
-      background-color: #ee7104;
-      color: white;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-      font-size: 16px;
-    }
-
-
-
-
-    .header{
-      background-color: gray;
-      border-radius: 10px;
-    }
-
-    body{
-      background-color: rgb(195, 195, 195);
-    }
-    .Mainlogotopofpage {
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-    }
-    .feed{
-      background-color: rgb(206, 212, 217);
-      padding: 20px;
-      border-radius: 30px;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    .profilepicture {
-      width: 60px;
-      height: 60px;
-      border-radius: 30px;
-      float: left;
-      margin-right: 20px;
-      object-fit: cover;
-    }
-
-    .username {
-      font-weight: bold;
-      color: black;
-    }
-
-    .postimage {
-      width: 1000px;
-    }
-    .post_in_feed{
-      margin-left: 20px;
-      margin-top: 20px;
-    }
-
-
-
-    .footer{
-      background-color: #ff5406;
-      padding: 15px;
-      border-radius: 10px;
-      height: 310px;
-    }
-    
-    .about_us{
-      background-color: rgb(217, 217, 217);
-      width: 200px;
-      height: 300px;
-      float: left;
-      padding: 5px;
-      margin-left: 600px;
-      border-radius: 10px;
-    }
-
-    .learn_more{
-      background-color: rgb(217, 217, 217);
-      width: 200px;
-      height: 300px;
-      float: right;
-      padding: 5px;
-      margin-right: 600px;
-      border-radius: 10px;
-    }
-
-    .footer_end_text{
-      font-size: 13px;
-      font-style: italic;
-      color: gray;
-      float: left;
-    }
-
-    #comment_section{
-      padding: 10px;
-      border-radius: 8px;
-      width: 1000px;
-    }
-
-
-  </style>
 </head>
+
 
 <body>
 
   <!--header section. this always stays at the top of the page-->
   <div class="header">
-    <img class="Mainlogotopofpage" src="images/applogo.jpg" alt="logo Alterego">
+    <div class="search_header">
+      <img class="Mainlogotopofpage" src="images/applogo.jpg" alt="logo Alterego">
 
-    <br>
-    <br>
 
-    <div>
-      <input type="search" name="searchbar" placeholder="Searching for Gamers?" id="searchbar">
-    </div>
 
-    <br>
-    <br>
-    
+      <div>
+        <input class="homepage_searchbar" type="search" name="searchbar" placeholder="Searching for Gamers?" id="searchbar">
+      </div>
+    </div>    
+
+
+
+
     <div class="navigation_buttons"> 
-      <a class="navbutton" href="index.html"><img class="homeimg" src="images/1946488.png" alt=""></a>
+      <a class="navbutton " href="index.html"><img class="this_page_homeimg" src="images/1946488.png" alt=""></a>
       
 
 
@@ -240,11 +60,97 @@
   <br>
   <br>
 
+  <div class="people_you_may_know">
+
+    <h4>Suggested Gamers</h4>
+
+    <div class="suggested_profile"><img src="images/pfp1.webp" alt="" class="suggested_profile_img">
+      <p>
+        @Swenn
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/pfp2.jpg" alt="" class="suggested_profile_img">
+      <p>
+        @RubikCube
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/images.jpeg" alt="" class="suggested_profile_img">
+      <p>
+        @toblerone
+      </p>
+    </div>
+    <br>
+    
+    <div class="suggested_profile"><img src="images/Danny_DeVito_by_Gage_Skidmore.jpg" alt="" class="suggested_profile_img">
+      <p>
+        @DannyDeVitoIsALegend
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/ss_8c03886f214d2108cafca13845533eaa3d87d83f.1920x1080.jpg" alt="" class="suggested_profile_img">
+      <p>
+        @Itsame
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/Call-of-Duty-Modern-Warfare-II_2022_06-08-22_004.jpg" alt="" class="suggested_profile_img">
+      <p>
+        @RandomPlayer
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/morgottpfp.webp" alt="" class="suggested_profile_img">
+      <p>
+        @Morgott
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/cyberpunk-2077-modders-make-unused-quests-and-e3-v-playable-1618840339115.webp" alt="" class="suggested_profile_img">
+      <p>
+        @Just_V
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/images (1).jpeg" alt="" class="suggested_profile_img">
+      <p>
+        @PatrickStarrr
+      </p>
+    </div>
+
+    <br>
+
+    <div class="suggested_profile"><img src="images/Remy_LeBeau_(Earth-TRN1401)_from_Deadpool_&_Wolverine_002.webp" alt="" class="suggested_profile_img">
+      <p>
+        @youknowhowlongivebeenwaitingforthis
+      </p>
+    </div>
+
+
+  </div>
+
   <!--Feed section with posts from users and relatie interactive buttons-->
   <div class="feed"> 
 
     <div class="post_in_feed"> 
           <img class="profilepicture" src="images/profilepicture.jpg" alt="profile picture">
+
+      <br>
 
           <a class="username" href="profile.html">@DaSpark</a>
 
@@ -264,14 +170,16 @@
           <input type="text" placeholder="Leave your thoughts!" id="comment_section">
  
   
-  <br>
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <div class="post_in_feed"> 
           <img class="profilepicture" src="images/eren jeagageru.jpg" alt="profile picture">
+
+      <br>
 
           <a class="username" href="">@DaSpark</a>
 
@@ -306,11 +214,11 @@
       </h3>
 
       <p>
-        Altereg is, as of now, run by a single person. Me, Michele Bevilacqua. At the moment i dont have any businness contacts, but in the future you will find me via
+        Alterego is, as of now, run by a single person: Michele Bevilacqua. <br> To contact me:
       </p>
 
       <ul>
-        <li>email</li>
+        <li><a class="email_link" href="mailto:mikelbevi@icloud.com">Mail me</a></li>
         <li>businness address</li>
         <li>businness telephone</li>
       </ul>
@@ -327,14 +235,14 @@
         Click this link if you wish to know more about Alterego!
       </p>
 
-      <a href="about_alterego.html">www.aboutalterego.com</a>
+      <a href="about_alterego.html" target="_blank">www.aboutalterego.com</a>
     </div>
 
 
   </div>
 
   <p class="footer_end_text">
-    Alterego, the website for gamers
+    Alterego, the website for gamers by gamers
   </p>
 
 </footer>
