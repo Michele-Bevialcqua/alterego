@@ -61,9 +61,9 @@
 
   .navbutton:hover{
     background-color: #ee8931;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: 0.2s;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: 0.4s;
   }
   
   .homeimg {
