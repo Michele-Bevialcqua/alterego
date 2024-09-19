@@ -1,0 +1,29 @@
+
+.account_details{
+    margin-top: 200px;
+    background-color: aliceblue;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .yourprofilepicture{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    float: left;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+
+  .post_timeline{
+    margin-top: 100px;
+    margin-left: 175px;
+  }
+
+  .acc_posted_images{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+
+  }
