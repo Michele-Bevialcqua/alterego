@@ -1,8 +1,63 @@
+.store_header{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
 
-.funko{
-    margin-top: 180px;
+.shop_section{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-.funko{
-    margin-top: 180px;
+
+.funko_shop{
+  height: 20vw;
+  width: 30vw;
+  object-fit: cover;
+  margin:0.6vw;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.4);
+}
+
+.playstation_store{
+  height: 20vw;
+  width: 30vw;
+  object-fit: cover;
+  margin:0.6vw;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.4);
+
+}
+
+.xbox_store{
+  height: 20vw;
+  width: 30vw;
+  object-fit: cover;
+  margin:0.6vw;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.4);
+
+}
+
+.nintendo_eshop{
+  height: 20vw;
+  width: 30vw;
+  object-fit: cover;
+  margin:0.6vw;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.4);
+
+}
+
+.steam_shop{
+  height: 20vw;
+  width: 30vw;
+  object-fit: cover;
+  margin:0.6vw;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.4);
+
+  
+}
+
+.footer{
+  margin-top: 10vw;
 }

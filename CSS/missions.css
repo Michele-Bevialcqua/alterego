@@ -5,6 +5,12 @@
     flex-direction: row;
 }
 
+@media screen and (max-width:768px){
+    #mobieBody{
+        height: 100vh;
+    }
+}
+
 .profile_info{
     margin: 1vw;
     border: 1px solid rgb(143, 143, 143);
@@ -52,13 +58,14 @@
     justify-content: space-around;
     object-fit: cover;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .trophy_img{
     background-color: rgb(150, 150, 150);
-    width: 10vw;
-    height: 10vw;
-    margin: 5px;
+    width: 8vw;
+    height: 8vw;
+    margin: 4px;
     object-fit: scale-down;
     border-radius: 8vw;
     padding: 2vw;

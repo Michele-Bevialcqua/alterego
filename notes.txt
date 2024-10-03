@@ -1,0 +1,4 @@
+- remember to name "username" as "alterego
+ex: "Select your Alterego!" instead of "select your username"
+
+-

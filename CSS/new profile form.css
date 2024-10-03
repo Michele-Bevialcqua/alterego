@@ -1,0 +1,86 @@
+body{
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+article{
+    font-size: 3em;
+    color: white;
+}
+
+
+.profileInfo{
+    margin-top: 5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 3vw;
+    width: 60vw;
+    border-radius: 30px;
+}
+
+ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+li {
+    color: white;
+    list-style: none;
+    margin: 10px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+li input{
+    border: none;
+    border-radius: 3px;
+    background-color: #2c2c2c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 25px;
+    width: 15vw;
+    text-align: center;
+}
+
+li button {
+    width: 15vw;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ff5406;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+li button:hover{
+    background-color: #7e2902;
+    color: white;
+}
+
+.languageDropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languageDropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.languageDropdown .dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: hsl(0deg 0% 32.43%);
+    min-width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    height: 130px;
+    overflow: scroll;
+}
+
+.languageDropdown button:hover .dropdownContent{
+    display: block;
+}

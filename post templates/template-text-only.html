@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-text-only</title>
+    <link type="text/css" rel="stylesheet" href="../CSS/normalize.css">
+    <link type="text/css" rel="stylesheet" href="/post templates/css templates/template-text-only.css">
+</head>
+<body class="feed">
+<img class="pfp" src="../images/pfp placeholder.jpg" alt="pfp">
+<h3 class="username"0>@User</h3>
+<article class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe beatae placeat illum culpa iusto odit quod temporibus nam tempore id, dolor eaque itaque sint debitis asperiores voluptate nesciunt explicabo soluta voluptatibus?</article>
+<br>  
+
+
+<div class="interaction_section">
+  <div class="interactive_buttons">
+    <button class="like_button" id="likeButton"><img id="likeImage" src="../images/like-off.png" alt="like button"></button>
+    
+    <p class="like_count" id="likeCount">0</p>
+    <button class="shareButton"><img src="../images/share.png" alt="share button"></button>
+  </div>
+
+  <br>
+  <input type="text" placeholder="Leave your thoughts!" class="comment_section">
+</div>     
+
+<script>
+  //la sezione che segue è per gestire in maniera locale i like
+  let likeCount = 0;
+  let liked = //recupera lo stato del like al local storage. se non esiste imposta su falso
+  JSON.parse(localStorage.getItem("liked"))|| false; 
+  
+  if (liked) {
+      likeCount += 1;
+  
+      document.getElementById('likeImage').src = '../images/like-on.png';
+  }
+  
+  else {
+      document.getElementById('likeImage').src = '../images/like-off.png';
+  }
+  
+  document.getElementById('likeCount').innerText = likeCount;
+  
+  document.getElementById('likeButton').addEventListener('click', function(){
+      if (liked) {
+          if (likeCount > 0){
+              likeCount--;
+          }
+          liked = false;
+          document.getElementById('likeImage').src = '../images/like-off.png';
+      }
+      else {
+          likeCount++;
+          liked = true;
+          document.getElementById('likeImage').src = '../images/like-on.png';
+      }
+      document.getElementById('likeCount').innerText = likeCount
+  
+      localStorage.setItem('liked', JSON.stringify(liked));
+  });</script>
+</body>
+</html>

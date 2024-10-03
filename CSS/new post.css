@@ -1,0 +1,55 @@
+.newpost{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+}
+
+.post_header{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 5px white;
+    margin-left: 5.35vw;
+}
+
+.profilepicture{
+    object-fit: cover;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin-left: 5vw;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+.post_content{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 78vw;
+    height: 60vh;
+    margin-left:2vw;
+    box-shadow: 0 0 20px white;
+}
+
+.writingSection{
+    margin-left: 1vw;
+    margin-top: 1vw;;
+}
+
+.textInPostCreation{
+    background-color: #333333;
+    border: none;
+    color: white;
+    width: 78vw;
+    height: 60vh;
+    
+}
+

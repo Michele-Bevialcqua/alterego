@@ -3,20 +3,22 @@
 <html lang="en">
 
 <head>
-  <title>Alterego</title>
+  <title>Alterego - Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sign up or Login to Alterego, the only social media platform for and by gamers. Connect with Gamers around the world with the same interests as you and stay up to date withthe latest news in the gaming industry">
   <link rel="stylesheet" href="CSS/general.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css"/>
+  <link rel="icon" type="image/x-icon" href="images/icon.png" type="image/x-icon">
+
 
 </head>
 
 
 <body>
 
-  <!--header section. this always stays at the top of the page. DO NOT REMOVE-->
+  <!--header section. this always stays at the top of the page-->
   <div class="header">
     <div class="search_header">
       <img class="Mainlogotopofpage" src="images/applogo.jpg" alt="logo Alterego">
@@ -25,11 +27,18 @@
 
       <div>
         <input class="homepage_searchbar" type="search" name="searchbar" placeholder="Searching for Gamers?" id="searchbar">
+        <div id="newPostModal"  class="new_post">
+
+            <img class="new_post_img" src="images/newpostimg.png" alt="new posts">
+
+        </div>
       </div>
     </div>    
 
 
-<!--navigation buttons at the top of the page. DO NOT REMOVE -->
+
+
+
 
     <div class="navigation_buttons"> 
       <a class="navbutton " href="index.html"><img class="this_page_homeimg" src="images/1946488.png" alt=""></a>
@@ -52,205 +61,68 @@
     </div>
   </div>
  
+  <!--End of header section-->
 
+  <!--Modal section to create new post-->
+  <div id="newPostSection">
+    <div class="new_post_content">
+      <span class="close">&times;</span>
+      <img class="newPostPFP" src="../images/pfp placeholder.jpg" alt="profile picture">
+      <h3 class="newPostUsername">Your Alterego</h3>
+      <input class="post_text" placeholder="Write your thoughts!" type="text">
 
+      <!--upload buttos for images/videos and GIFs-->
+      <div class="postButtons">
+        <button class="uploadButton">Upload Image</button>
+        <button class="uploadButton">Upload Video</button>
+        <button class="uploadButton">Upload GIF</button>
+      </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <div class="people_you_may_know">
-
-    <h4>Suggested Gamers</h4>
-
-    <div class="suggested_profile"><img src="images/pfp1.webp" alt="" class="suggested_profile_img">
-      <p>
-        @Swenn
-      </p>
     </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/pfp2.jpg" alt="" class="suggested_profile_img">
-      <p>
-        @RubikCube
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/images.jpeg" alt="" class="suggested_profile_img">
-      <p>
-        @toblerone
-      </p>
-    </div>
-    <br>
-    
-    <div class="suggested_profile"><img src="images/Danny_DeVito_by_Gage_Skidmore.jpg" alt="" class="suggested_profile_img">
-      <p>
-        @DannyDeVitoIsALegend
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/ss_8c03886f214d2108cafca13845533eaa3d87d83f.1920x1080.jpg" alt="" class="suggested_profile_img">
-      <p>
-        @Itsame
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/Call-of-Duty-Modern-Warfare-II_2022_06-08-22_004.jpg" alt="" class="suggested_profile_img">
-      <p>
-        @RandomPlayer
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/morgottpfp.webp" alt="" class="suggested_profile_img">
-      <p>
-        @Morgott
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/cyberpunk-2077-modders-make-unused-quests-and-e3-v-playable-1618840339115.webp" alt="" class="suggested_profile_img">
-      <p>
-        @Just_V
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/images (1).jpeg" alt="" class="suggested_profile_img">
-      <p>
-        @PatrickStarrr
-      </p>
-    </div>
-
-    <br>
-
-    <div class="suggested_profile"><img src="images/Remy_LeBeau_(Earth-TRN1401)_from_Deadpool_&_Wolverine_002.webp" alt="" class="suggested_profile_img">
-      <p>
-        @youknowhowlongivebeenwaitingforthis
-      </p>
-    </div>
-
-
   </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div id="people_you_may_know" class="people_you_may_know">
+  </div>
+
+
 
   <!--Feed section with posts from users and relatie interactive buttons-->
-  <div class="feed"> 
+  <div id="feed" class="feed">
+    <div class="firstPost">
+      <img class="pfp" src="../images/pfp placeholder.jpg" alt="pfp">
+<h3 class="username"0>@User</h3>
+<article class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe beatae placeat illum culpa iusto odit quod temporibus nam tempore id, dolor eaque itaque sint debitis asperiores voluptate nesciunt explicabo soluta voluptatibus?</article>
+<img class="post_img" src="../images/post img placeholder.jpg" alt="post image">
 
-    <div class="post_in_feed"> 
-          <img class="profilepicture" src="images/profilepicture.jpg" alt="profile picture">
-
-      <br>
-
-          <a class="username" href="profile.html">@DaSpark</a>
-
-          <p class="posttext">This dude looks so odd lol</p>
-
-          <img class="postimage" src="images/post.jpg" alt="post image">
-   
-    </div>      
-
-        <br>  
-
-        <button>like</button>
-        <button>share</button>
-
-        <br>
-        <br>
-          <input type="text" placeholder="Leave your thoughts!" id="comment_section">
- 
-  
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="post_in_feed"> 
-          <img class="profilepicture" src="images/eren jeagageru.jpg" alt="profile picture">
-
-      <br>
-
-          <a class="username" href="">@ErenJagermaister</a>
-
-          <p class="posttext">Probably still one of the most traumatising places on earth...</p>
-
-          <img class="postimage" src="images/SRFull.jpg" alt="post image">
-   
-    </div>      
-
-        <br>  
-
-        <button>like</button>
-          <button>share</button>
-
-        <br>
-        <br>
-          <input type="text" placeholder="Leave your thoughts!" id="comment_section">
+<br>  
+<div class="interaction_section">
+  <div class="interactive_buttons">
+    <button class="like_button" id="likeButton"><img id="likeImage" src="../images/like-off.png" alt="like button"></button>
+    
+    <p class="like_count" id="likeCount">0</p>
+    <button class="shareButton"><img src="../images/share.png" alt="share button"></button>
   </div>
 
-      <button>like</button>
-      <button>share</button>
-      <br>
-      <input placeholder="Comment here!">
-  </div>  
+  <br>
+  <input type="text" placeholder="Leave your thoughts!" class="comment_section">
+</div>    
+    </div>
+  </div>
+
+  <script src="/js/templateUpload.js"></script>
+  <script src="/js/autoadjustLayout.js"></script>
+  <script src="/js/manageLikes.js"></script>
+  <script src="/js/newPostCreation.js"></script>
+  <script src="post templates/js templates/js templates.js"></script>
 </body>
 
 <br>
 
-<!--Footer sections at the bottom of the page. DO NOT REMOVE-->
-<footer>
 
-  <div class="footer">
-
-    <div class="about_us">
-
-      <h3>
-        About Us
-      </h3>
-
-      <p>
-        Alterego is, as of now, run by a single person: Michele Bevilacqua. <br> To contact me:
-      </p>
-
-      <ul>
-        <li><a class="email_link" href="mailto:mikelbevi@icloud.com">Mail me</a></li>
-        <li>businness address</li>
-        <li>businness telephone</li>
-      </ul>
-
-    </div>
-
-    <div class="learn_more">
-
-      <h3>
-        Learn More!
-      </h3>
-
-      <p>
-        Click this link if you wish to know more about Alterego!
-      </p>
-
-      <a href="about_alterego.html" target="_blank">www.aboutalterego.com</a>
-    </div>
-
-
-  </div>
-
-  <p class="footer_end_text">
-    Alterego, the website for gamers by gamers
-  </p>
-
-</footer>
 
 </html>
